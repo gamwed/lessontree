@@ -1,31 +1,39 @@
-# t = int(input("temp: "))
-# if t < 0:
-#     print("very cold!")
+# task 1
+# total_floors = 9
+# apart_per_floor = 4
+# pad = 4
+# total_apart = 144
+# apart_num = int(input("Кварита ? "))
+# if apart_num > total_apart:
+#     print("Такой нема!")
 # else:
-#     print("shrko!!")
-# print('have a nice day')
+#     print("пад",((apart_num) // (total_floors * apart_per_floor))+1)
+#     print("поверх",(((apart_num - 1) % (total_floors * apart_per_floor)) // apart_per_floor)+1)
 
-# point = int(input('бал: '))
-# if point >= 90:
-#     print("A")
-# elif point >= 85:
-#     print("B")
-# elif point >= 75:
-#     print("C")
-# elif point >= 70:
-#     print("D")
-# elif point >= 60:
-#     print("E")
+# task 2
+# year = int(input("Введіть рік: "))
+# if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+#     days = 366
 # else:
-#     print("F")
-#
-# х = 10
-#
-# if x == 10:
-#     x = 0
+#     days = 365
+# print("Кількість днів у році:", days)
 
-# x = float(input("cord x "))
-# y = float(input("cord y "))
-# print(y<=1 and y>=abs(x))
+# task 3
+# a = int(input("A= "))
+# b = int(input("B= "))
+# c = int(input("C= "))
+# print("True - Існуе. False - Не існуе")
+# print(a+b > c and a+c > b and b+c > a)
 
-X = []
+# task 4
+# response = input("Володієте посвідченням водія? (yes/no): ")
+# answers = ["Ви не можете керувати автомобілем", "Ви можете керувати автомобілем"]
+# print(answers[response == "yes"])
+
+# task 5
+# age = int(input("Введіть свій вік: "))
+# driver_license = input("Чи маєте ви посвідчення водія? (yes/no): ")
+# criteria = [age > 18, driver_license.lower() == "yes"]
+# messages = ["Ви можете отримати посвідчення водія", "Ви не відповідаєте критеріям для отримання посвідчення водія"]
+# print(messages[criteria.count(False)])
+
